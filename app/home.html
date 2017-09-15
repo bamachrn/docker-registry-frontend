@@ -3,7 +3,16 @@
 </ol>
 
 <div class="jumbotron">
-  <h1>Welcome, to the Docker registry!</h1>
-  <p class="lead">Proudly serving your Docker images.</p>
+  <p class="lead">
+  The CentOS Project aims to run a local container registry to facilitate upstream and distro components to be delivered in a format suitable to be consumed by container tool chains on CentOS Linux. This work is part of the wider CentOS Container Pipeline effort, which is tracked on the <a href="https://lists.centos.org/">CentOS-Devel Mailing List<a>.
+  </p>
+  <p class="lead">
+  At any given time, we will have testing, development and released containers in the registry. The following lists the ones we consider as released along with the namespace they map into. In order to use this registry please add it to your search and pull paths. eg. on docker you can achieve this with :
+  </p>
+  <p><mark>setting --add-registry registry.centos.org</mark></p>
+
+  <p>in your /etc/sysconfig/docker file.</p>
+
+  <p>For details on getting your containers here, please visit the Readme in https://github.com/centos/container-index<p>
   <p><a class="btn btn-lg btn-primary" href="repositories/{{appMode.defaultRepositoriesPerPage}}" role="button"><span class="glyphicon glyphicon-book"></span> Browse repositories</a></p>
 </div>
